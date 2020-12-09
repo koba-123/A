@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fullscreen">
+  <div class="container">
+    <h1 class="title">MTE在庫･備品管理システム</h1>
+  </div>
+  
+  <form class="form-tool" action="confirm.php" method="post">
+    <p>返却する備品を確認してください。</p>
+    <div class="list">
+      <label class="label">名称</label>
+      <input class="inputs" type="text" name="name">
+    </div>
+    <div class="list">
+      <label class="label">メーカ</label>
+      <input class="inputs" type="text" name="mfrname">
+    </div>    
+    <div class="list">
+      <label class="label">仕様</label>
+      <input class="inputs" type="text" name="spec">
+    </div>    
+    <div class="list">
+      <label class="label">サイズ</label>
+      <input class="inputs" type="text" name="size">
+    </div>    
+    <div class="list">
+      <label class="label">場所</label>
+      <input class="inputs" type="text" name="location">
+    </div>
+    <div class="item">
+      <label class="label">返却日</label>
+      <input class="inputs" type="date" name="return">
+    </div>
+    <div class="item">
+      <label class="label">メモ</label>
+      <textarea class="inputs"></textarea>
+    </div>
+  </div>
+    <div class="btn-area">
+    <input type="submit" value="登録"><input type="reset" value="リセット">
+  </div>
+  </form>
+
+  <div class="p-nav">
+    <a href="index.html" class="btn-nav">🏠HOME</a>
+  </div>
+
+</body>
+</html>
