@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fullscreen">
+  
+    <h1 class="title">MTE在庫･備品管理システム</h1>
+    
+  <form class="form-tool" action="confirm.php" method="post">
+    <p>在庫残量を確認し、出入庫数を入力してください。</p>
+    
+    <div class="list">
+      <label class="label">No.</label>
+      <input class="inputs" type="text" name="itemno">
+    </div>
+    <div class="list">
+      <label class="label">名称</label>
+      <input class="inputs" type="text" name="name">
+    </div>
+    <div class="list">
+      <label class="label">メーカ</label>
+      <input class="inputs" type="text" name="mfrname">
+    </div>       
+    <div class="list">
+      <label class="label">型式</label>
+      <input class="inputs" type="text" name="model">
+    </div>    
+    <div class="list">
+      <label class="label">場所</label>
+      <input class="inputs" type="text" name="location">
+    </div>
+    <div class="item">
+      <label class="label">メモ</label>
+      <textarea class="inputs"></textarea>
+    </div>
+    <div class="item">
+      <label class="label">追加数</label>
+      <input class="inputs" type="number" name="partsadd">
+    </div>
+    <div class="item">
+      <label class="label">持出数</label>
+      <input class="inputs" type="number" name="partsuse">
+    </div>
+    <div class="btn-area" >
+      <input type="submit" value="登録"><input type="reset" value="リセット">
+    </div>
+  </form>
+
+  <div class="p-nav">
+    <a href="index.html" class="btn-nav">🏠HOME</a>
+  </div>
+
+
+
+</body>
+</html>
